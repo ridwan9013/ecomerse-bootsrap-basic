@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ini navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ridwan Store</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pembayaran.html">Pembayaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ini navbar end-->
+    <div class="container">
+        <h1>Checkout Form</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">Kota</label>
+                    <input type="text" class="form-control" id="city" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">Kecamatan</label>
+                    <select id="state" class="form-control" required>
+                        <option selected></option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="zip">Kode Pos</label>
+                    <input type="text" class="form-control" id="zip" required>
+                </div>
+            </div>
+            <hr>
+            <h2>Payment Information</h2>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" class="form-control" id="card-number" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" class="form-control" id="expiry-date" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Pesan Sekarang</button>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+</body>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; Copyright 2023 Ridwan Store</p>
+    </footer>
+
+</div>
+
+</html>
